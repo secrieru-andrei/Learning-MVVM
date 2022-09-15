@@ -13,6 +13,10 @@
 		75ACA6CE28D0EF73008063CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75ACA6CC28D0EF73008063CF /* Main.storyboard */; };
 		75ACA6D028D0EF75008063CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75ACA6CF28D0EF75008063CF /* Assets.xcassets */; };
 		75ACA6D328D0EF75008063CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75ACA6D128D0EF75008063CF /* LaunchScreen.storyboard */; };
+		75ACA6DC28D0F7C7008063CF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ACA6DB28D0F7C7008063CF /* Model.swift */; };
+		75ACA6DF28D0F8C3008063CF /* PersonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ACA6DE28D0F8C3008063CF /* PersonViewCell.swift */; };
+		75ACA6E228D33D0A008063CF /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ACA6E128D33D0A008063CF /* PersonViewModel.swift */; };
+		75ACA6E428D3568F008063CF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 75ACA6E328D3568F008063CF /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		75ACA6CF28D0EF75008063CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75ACA6D228D0EF75008063CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75ACA6D428D0EF75008063CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75ACA6DB28D0F7C7008063CF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		75ACA6DE28D0F8C3008063CF /* PersonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewCell.swift; sourceTree = "<group>"; };
+		75ACA6E128D33D0A008063CF /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		75ACA6E328D3568F008063CF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		75ACA6C528D0EF73008063CF /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				75ACA6DD28D0F89C008063CF /* View */,
+				75ACA6DA28D0F7B2008063CF /* Models */,
+				75ACA6E028D33CEF008063CF /* ViewModels */,
 				75ACA6C628D0EF73008063CF /* AppDelegate.swift */,
-				75ACA6C828D0EF73008063CF /* SceneDelegate.swift */,
 				75ACA6CA28D0EF73008063CF /* ViewController.swift */,
+				75ACA6C828D0EF73008063CF /* SceneDelegate.swift */,
 				75ACA6CC28D0EF73008063CF /* Main.storyboard */,
 				75ACA6CF28D0EF75008063CF /* Assets.xcassets */,
 				75ACA6D128D0EF75008063CF /* LaunchScreen.storyboard */,
 				75ACA6D428D0EF75008063CF /* Info.plist */,
+				75ACA6E328D3568F008063CF /* .gitignore */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		75ACA6DA28D0F7B2008063CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				75ACA6DB28D0F7C7008063CF /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		75ACA6DD28D0F89C008063CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75ACA6DE28D0F8C3008063CF /* PersonViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		75ACA6E028D33CEF008063CF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				75ACA6E128D33D0A008063CF /* PersonViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75ACA6E428D3568F008063CF /* .gitignore in Resources */,
 				75ACA6D328D0EF75008063CF /* LaunchScreen.storyboard in Resources */,
 				75ACA6D028D0EF75008063CF /* Assets.xcassets in Resources */,
 				75ACA6CE28D0EF73008063CF /* Main.storyboard in Resources */,
@@ -139,8 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				75ACA6CB28D0EF73008063CF /* ViewController.swift in Sources */,
+				75ACA6DF28D0F8C3008063CF /* PersonViewCell.swift in Sources */,
 				75ACA6C728D0EF73008063CF /* AppDelegate.swift in Sources */,
+				75ACA6E228D33D0A008063CF /* PersonViewModel.swift in Sources */,
 				75ACA6C928D0EF73008063CF /* SceneDelegate.swift in Sources */,
+				75ACA6DC28D0F7C7008063CF /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
